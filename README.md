@@ -243,8 +243,8 @@ Vicuna can also be trained on 8 A100 GPUs with 80GB memory with the following co
 ```bash
 torchrun --nnodes=1 --nproc_per_node=2 --master_port=11140 \
     fastchat/train/train_mem.py \
-    --model_name_or_path /home/ckq/ckq_2023/llama/vicuna-7b \
-    --data_path /home/ckq/ckq_2023/llama/FastChat/playground/data \
+    --model_name_or_path ./vicuna-7b \
+    --data_path ./playground/data \
     --bf8 True \
     --output_dir ./output/checkpoints \
     --num_train_epochs 3 \
