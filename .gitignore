@@ -11,6 +11,7 @@ dist
 # Data
 !**/alpaca-data-conversation.json
 vicuna-7b/
+.condarc
 
 # Editor
 .idea
